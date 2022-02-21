@@ -1,7 +1,7 @@
 # Getting Started 
     In the application, users can register and create, get their own wishlist.
 
-###Technology Stack
+### Technology Stack
     Java 8
     Spring Boot 2.5
     Spring Data Coucbase
@@ -11,7 +11,7 @@
     Docker
     Mockito & Junit
     
-###Clone Repository
+### Clone Repository
 
     git clone https://github.com/vturkoglu/wunderlist.git
 
@@ -33,7 +33,7 @@
 
 ## Running Test Cases
 
-##Register
+## Register
         ---Register Request---
         curl -i -X POST \
         -H "Content-Type:application/json" \
@@ -52,7 +52,7 @@
             "links":[]
         }
 
-##Login
+## Login
         ----Login Request---
         curl -i -X POST \
         -H "Content-Type:application/json" \
@@ -66,7 +66,7 @@
         ---Login Reponse---
         Token : eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyIjoibWVtYXRpMiJ9.VXywqyggY35Erhaahp4HzFEJ1ujdSQrJXEvbA-tk56qA7OP8Sf68_8jUKaa4Py7RE8C7Ktl38cbw4i7CvO2L5g
 
-##Add Wishlist
+## Add Wishlist
         ---Wishlist Add Request---
         curl -i -X POST \
         -H "Content-Type:application/json" \
@@ -78,13 +78,13 @@
         }' \
         'http://localhost:8080/api/wishlist/user1/add'
 
-##Get Wishlist 
+## Get Wishlist 
         ---Get Own Wishlist Request---
         curl -i -X GET \
         -H "Authentication:Bearer eyJhbGciOiJIUzUxMiJ9.eyJ1c2VyIjoibWVtYXRpMiJ9.VXywqyggY35Erhaahp4HzFEJ1ujdSQrJXEvbA-tk56qA7OP8Sf68_8jUKaa4Py7RE8C7Ktl38cbw4i7CvO2L5g" \
         'http://localhost:8080/api/wishlist/user1/get'
 
-##Swagger
+## Swagger
     You can also monitoring and test/run methods via swagger.
 
 http://localhost:8080/swagger-ui.html
