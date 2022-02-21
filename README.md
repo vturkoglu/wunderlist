@@ -4,8 +4,8 @@
 ### Technology Stack
     Java 8
     Spring Boot 2.5
-    Spring Data Coucbase
-    Coucbase
+    Spring Data Couchbase
+    Couchbase
     Swagger 2
     Maven
     Docker
